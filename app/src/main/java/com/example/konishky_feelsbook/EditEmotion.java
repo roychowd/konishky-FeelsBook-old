@@ -15,11 +15,16 @@ public class EditEmotion extends AppCompatActivity {
     private TextView mEmotionName;
     private EditText mDateField;
     private EditText mCommentField;
+    private SaveListState stateChanger;
 
+
+
+    // called ot edit the fields of data
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_emotion);
+        stateChanger = new SaveListState(this);
         mEmotionName = findViewById(R.id.emotionTextView_Edit);
         mDateField = findViewById(R.id.date_text_change);
         mCommentField = findViewById(R.id.edit_comment_EditText);
@@ -41,17 +46,22 @@ public class EditEmotion extends AppCompatActivity {
         mCommentField.setText(mEmotion.getComment());
     }
 
+
+    // when user clicks change the it edits the info about that particular information
     public void onChangeClick(View view) {
         Emotion newEmotion = new Emotion(mEmotionName.getText().toString());
         newEmotion.setDate(mDateField.getText().toString());
         newEmotion.setComment(mCommentField.getText().toString());
         mEmotionList.EditEmotion(index, newEmotion);
+        stateChanger.saveInFile();
         finish();
     }
 
 
+    // calls a fucntion to delete the emotion from the arraylist
     public void onDeleteClick(View view) {
         mEmotionList.deleteEmotion(index);
+        stateChanger.saveInFile();
         finish();
     }
 }

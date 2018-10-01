@@ -6,15 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.FileNameMap;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private ImageView angerPic, sadnessPic, joyPic, lovePic, fearPic, surprisedPic;
     private Emotion Anger, Sadness, Joy, Love, Fear, Surprised;
     private EmotionList mEmotionList = EmotionList.getInstance();
+    private SaveListState stateChanger;
 
     public static final String EXTRA_COUNT = "count";
     public static final String EXTRA_MESSAGE = "com.example.konishky_feelsbook.extra.MESSAGE";
     public static final String EXTRA_HISTORY = "history";
+    public static final String FILENAME = "file.sav";
 
     static final int GRAB_ARRAY_LIST = 1;
 //    private ArrayList<Emotion> mEmotionList= new ArrayList<>();
@@ -23,6 +31,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        stateChanger = new SaveListState(this);
+        stateChanger.loadFromFile();
         // just some basic initialization
         // need to be used in the onclick handler
         angerPic = findViewById(R.id.AngerPicture);
@@ -55,11 +65,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Emotion newEmotion = new Emotion(mEmotionString);
         mEmotionList.addToEmotionList(newEmotion);
+        stateChanger.saveInFile();
         Intent intent = new Intent(MainActivity.this, EmotionActivity.class);
         intent.putExtra(EXTRA_MESSAGE, mEmotionString);
         startActivity(intent);
-//        startActivityForResult(intent, GRAB_ARRAY_LIST);
-
     }
 
     /**
@@ -108,4 +117,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         startActivity(historyIntent);
 
     }
+
+
 }

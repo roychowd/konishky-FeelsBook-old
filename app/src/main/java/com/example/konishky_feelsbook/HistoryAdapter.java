@@ -1,3 +1,5 @@
+// Adapter class
+
 package com.example.konishky_feelsbook;
 
 import android.annotation.SuppressLint;

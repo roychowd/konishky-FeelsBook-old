@@ -21,6 +21,7 @@ public class EmotionActivity extends AppCompatActivity {
     private EditText mDateField;
     private EditText mCommentField;
     private Emotion mEmotion;
+    private SaveListState stateChanger;
     //private ArrayList<Emotion> mListOfEmotions = new ArrayList<>();
     private EmotionList mListOfEmotions = EmotionList.getInstance();
     public static final String EMOTION_EXTRA = "emotion";
@@ -31,7 +32,7 @@ public class EmotionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_emotion);
-
+        stateChanger = new SaveListState(this);
         // sets the textview to display emotion name
         Intent intent = getIntent();
         String emotionString = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
@@ -54,7 +55,6 @@ public class EmotionActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         LatestAddedIndex = mListOfEmotions.getListCount() - 1;
-        Log.d("THEINDEX", String.valueOf(LatestAddedIndex));
     }
 
     /**
@@ -69,9 +69,12 @@ public class EmotionActivity extends AppCompatActivity {
 
     public void onAddButtonClick(View view) {
         mEmotion.setComment(mCommentField.getText().toString());
-        if (mDateField.getText().toString() != mEmotion.getDate()) {
+        if (!mDateField.getText().toString().equals(mEmotion.getDate())) {
             mEmotion.setDate(mDateField.getText().toString());
         }
+        stateChanger.saveInFile();
+
+
 //        Intent returnIntent = new Intent(EmotionActivity.this, MainActivity.class);
 //        returnIntent.putExtra(EMOTION_EXTRA, mEmotion);
 //        setResult(Activity.RESULT_OK,returnIntent);
