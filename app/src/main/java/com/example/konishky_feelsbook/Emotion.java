@@ -72,7 +72,7 @@ public class Emotion implements Serializable {
     private String getCurrentDate() {
         Date date = new Date();
         SimpleDateFormat ISO8601Date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-        ISO8601Date.setTimeZone(TimeZone.getTimeZone("Denver/America"));
+        ISO8601Date.setTimeZone(TimeZone.getTimeZone("MST"));
         String text = ISO8601Date.format(date);
         return text;
 

@@ -81,4 +81,8 @@ public class EmotionActivity extends AppCompatActivity {
         finish();
 
     }
+
+    public void onSkipClick(View view) {
+        finish();
+    }
 }

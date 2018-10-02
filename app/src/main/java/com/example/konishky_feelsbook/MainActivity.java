@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static final String FILENAME = "file.sav";
 
     static final int GRAB_ARRAY_LIST = 1;
-//    private ArrayList<Emotion> mEmotionList= new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,24 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         fearPic = findViewById(R.id.FearPicture);
         surprisedPic = findViewById(R.id.SurprisedPicture);
     }
-
-
-
-//    @Override
-//    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-//
-//        if (requestCode == 1) {
-//            if(resultCode == Activity.RESULT_OK){
-//                Emotion result = (Emotion) data.getSerializableExtra(EmotionActivity.EMOTION_EXTRA);
-//                Log.d("EMOTION_RETURN", result.getName());
-//                mEmotionList.addToEmotionList(result);
-//                Log.d("SIZE_EMOTION", String.valueOf(mEmotionList.size()));
-//            }
-//            if (resultCode == Activity.RESULT_CANCELED) {
-//                //Write your code if there's no result
-//            }
-//        }
-//    }//onActivityResult
 
     public void startClickActivity(String mEmotionString) {
 

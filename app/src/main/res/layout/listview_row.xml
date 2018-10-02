@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="30dp"
             android:text="TextView"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:textStyle="bold" />
 
         <TextView

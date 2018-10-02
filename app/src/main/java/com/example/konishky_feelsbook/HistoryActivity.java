@@ -66,4 +66,9 @@ public class HistoryActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onHomeClick(View view) {
+        Intent intent = new Intent(HistoryActivity.this, MainActivity.class);
+        startActivity(intent);
+    }
 }
