@@ -56,9 +56,6 @@ public class EmotionList{
 
     }
 
-
-
-
     // add an emotion to our list
     public void addToEmotionList(Emotion emotion) {
         Emotion newEmotion = new Emotion(emotion.getName());
@@ -76,19 +73,6 @@ public class EmotionList{
         return emotionArray.size();
     }
 
-
-    // retrieves an emotion // need to work on this implementation
-    // only here if need be prolly not necessary for implementation
-
-    public Emotion grabElementByDate(String eDate) {
-        for ( Emotion next : emotionArray) {
-            if (next.getDate().equals(eDate)) {
-                return next;
-            }
-        }
-
-        return null;
-    }
 
     // retrieves an emotion through index
     public Emotion grabElementByIndex(int index) {

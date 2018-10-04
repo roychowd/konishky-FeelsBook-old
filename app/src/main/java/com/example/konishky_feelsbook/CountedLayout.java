@@ -14,7 +14,7 @@ public class CountedLayout extends AppCompatActivity {
     HashMap<String,Integer> countMap = new HashMap<>();
     ListView countedListView;
 
-    public void setCountMap(HashMap<String, Integer> countMap) {
+    private void setCountMap(HashMap<String, Integer> countMap) {
         countMap.put("Fear", 0);
         countMap.put("Sadness", 0);
         countMap.put("Anger", 0);
@@ -28,10 +28,9 @@ public class CountedLayout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counted_layout);
         setCountMap(countMap);
-        Intent C = getIntent();
         ArrayList<Emotion> mEmotionList = EmotionList.getEmotionList();
-
         getCounts(mEmotionList);
+
         String[] mName = countMap.keySet().toArray(new String[countMap.size()]);
         Integer[] mCount = countMap.values().toArray(new Integer[countMap.size()]);
         CountViewAdapter adapter = new CountViewAdapter(this, mName, mCount);
@@ -41,22 +40,16 @@ public class CountedLayout extends AppCompatActivity {
     }
 
 
-    private void getCounts(ArrayList emotionArr) {
+    private void getCounts(ArrayList<Emotion> emotionArr) {
         for (int i = 0; i < emotionArr.size(); i++) {
-            Emotion e = (Emotion) emotionArr.get(i);
+            Emotion e = emotionArr.get(i);
             String eName = e.getName();
 
             if (countMap.containsKey(eName)) {
                 int count = countMap.get(eName);
                 count++;
                 countMap.put(eName, count);
-                int x = countMap.get(eName);
-                Log.d("COUNTMAP", eName + "value is : " + String.valueOf(x) );
             }
-
-
-
-
         }
     }
 

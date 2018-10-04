@@ -40,12 +40,11 @@ public class SaveListState {
             Gson gson = new Gson();
             Type emotionListType = new TypeToken<ArrayList<Emotion>>(){}.getType();
             emotionArray = gson.fromJson(reader, emotionListType );
-            Log.d("LOADFROMFILE", "Load from file works?");
             EmotionList.setEmotionArray(emotionArray);
             fis.close();
 
         } catch (FileNotFoundException e) {
-            // TODO Auto-generated catch block\
+            // TODO Auto-generated catch block
             emotionArray =new ArrayList<Emotion>();
             EmotionList.setEmotionArray(emotionArray);
             e.printStackTrace();
@@ -65,7 +64,6 @@ public class SaveListState {
             BufferedWriter writer = new BufferedWriter(osw);
             Gson gson = new Gson();
             gson.toJson( EmotionList.getEmotionList(), writer);
-            Log.d("LOADFROMFILE", "saveInFile: works>");
             writer.flush();
             fos.close();
 

@@ -22,9 +22,7 @@ public class EmotionActivity extends AppCompatActivity {
     private EditText mCommentField;
     private Emotion mEmotion;
     private SaveListState stateChanger;
-    //private ArrayList<Emotion> mListOfEmotions = new ArrayList<>();
     private EmotionList mListOfEmotions = EmotionList.getInstance();
-    public static final String EMOTION_EXTRA = "emotion";
     private int LatestAddedIndex;
 
     @Override
@@ -33,7 +31,6 @@ public class EmotionActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_emotion);
         stateChanger = new SaveListState(this);
-        // sets the textview to display emotion name
         Intent intent = getIntent();
         String emotionString = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.emotion_TextView);
@@ -43,7 +40,6 @@ public class EmotionActivity extends AppCompatActivity {
         mEmotion = mListOfEmotions.grabElementByIndex(LatestAddedIndex);
         mDateField = findViewById(R.id.date_text);
         String date = mEmotion.getDate();
-        Log.d( "THEINDEX", mEmotion.getDate());
         mDateField.setText(date);
 
         // sets the other fields
@@ -57,6 +53,7 @@ public class EmotionActivity extends AppCompatActivity {
         LatestAddedIndex = mListOfEmotions.getListCount() - 1;
     }
 
+
     /**
      * The following returns the ISO-8601 formatted date
      * i used this resource to help me
@@ -65,19 +62,12 @@ public class EmotionActivity extends AppCompatActivity {
      * @return date string thats formatted in iso-8601
      */
 
-
-
     public void onAddButtonClick(View view) {
         mEmotion.setComment(mCommentField.getText().toString());
         if (!mDateField.getText().toString().equals(mEmotion.getDate())) {
             mEmotion.setDate(mDateField.getText().toString());
         }
         stateChanger.saveInFile();
-
-
-//        Intent returnIntent = new Intent(EmotionActivity.this, MainActivity.class);
-//        returnIntent.putExtra(EMOTION_EXTRA, mEmotion);
-//        setResult(Activity.RESULT_OK,returnIntent);
         finish();
 
     }
