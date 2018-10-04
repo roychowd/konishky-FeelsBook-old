@@ -13,8 +13,8 @@ import android.widget.TextView;
 
 public class HistoryAdapter extends ArrayAdapter {
     private final Activity context;
-    public String[] date;
-    public String[] name;
+    private String[] date;
+    private String[] name;
 
 
     HistoryAdapter(Activity context, String[] nameArr, String[] dateArr) {

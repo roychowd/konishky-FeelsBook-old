@@ -18,4 +18,5 @@
     <string name="delete_string">Delete</string>
     <string name="add_emotion">Add Emotion</string>
     <string name="skip">Skip</string>
+    <string name="view_history">View History</string>
 </resources>

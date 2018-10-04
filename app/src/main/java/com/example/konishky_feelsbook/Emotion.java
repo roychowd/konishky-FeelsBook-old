@@ -1,6 +1,8 @@
 package com.example.konishky_feelsbook;
 
 
+import android.annotation.SuppressLint;
+
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -71,8 +73,7 @@ public class Emotion implements Serializable {
 
     private String getCurrentDate() {
         Date date = new Date();
-        SimpleDateFormat ISO8601Date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-        ISO8601Date.setTimeZone(TimeZone.getTimeZone("MST"));
+        @SuppressLint("SimpleDateFormat") SimpleDateFormat ISO8601Date = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
         String text = ISO8601Date.format(date);
         return text;
 

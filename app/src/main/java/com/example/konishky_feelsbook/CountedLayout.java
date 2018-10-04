@@ -28,7 +28,7 @@ public class CountedLayout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_counted_layout);
         setCountMap(countMap);
-        Intent intent = getIntent();
+        Intent C = getIntent();
         ArrayList<Emotion> mEmotionList = EmotionList.getEmotionList();
 
         getCounts(mEmotionList);
