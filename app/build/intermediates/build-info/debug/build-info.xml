@@ -2,47 +2,148 @@
 <instant-run
     abi="x86"
     api-level="28"
-    build-mode="COLD"
+    build-mode="FULL"
     density="xxhdpi"
     format="10"
-    ir-eligibility="METHOD_ADDED"
     plugin-version="3.1.4"
-    timestamp="1538676241002"
+    timestamp="1538700227369"
     token="-8210781820231771232"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="502" />
+        duration="2661" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="53" />
+        duration="268" />
     <task
         name="verifier"
-        duration="3" />
+        duration="366" />
 
     <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+        type="SPLIT_MAIN" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        type="SPLIT" />
+    <artifact
         location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1538674390811"
+        timestamp="1538700227369"
         verifier="FULL_BUILD_REQUESTED" >
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/cmput301/idk/konishky-FeelsBook/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
             location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
             location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
@@ -51,34 +152,25 @@
             location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/resources/instant-run/debug/resources-debug.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
-            type="SPLIT" />
-        <artifact
             location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
             location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/instant-run-apk/debug/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="METHOD_ADDED"
-        timestamp="1538676241002"
-        verifier="COLD_SWAP_REQUESTED" >
+            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
         <artifact
             location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/dhrubachowdhury/Desktop/Temp Files/konishky-FeelsBook/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
     </build>
 
